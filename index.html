@@ -12,16 +12,27 @@
     <!-- Wrapper -->
     <div id="wrapper">
 
- <!-- Header -->
+<!-- Header -->
 <header id="header" class="alt" style="text-align: center;">
-  <a href="/" class="logo" style="display: block;">
+  <a href="/" class="logo">
     <img src="images/hellodesk-logo.png"
          alt="HelloDesk logo"
-         style="height: 80px; display: inline-block; opacity: 1; visibility: visible;" />
+         style="height: 80px; display: inline-block; margin-bottom: 10px;" />
   </a>
-  <h1 style="display: block; color: white;">HelloDesk</h1>
-  <p style="display: block; color: white;">Smart AI chatbots for service businesses</p>
+  <h1 style="color: white; display: block;">HelloDesk</h1>
+  <p style="color: white; display: block;">Smart AI chatbots for service businesses</p>
 </header>
+
+<!-- Disable hidden header animation -->
+<style>
+  #header .logo,
+  #header h1,
+  #header p {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+</style>
       
         <!-- Main -->
         <div id="main">
