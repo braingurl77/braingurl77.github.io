@@ -6,15 +6,26 @@
   <title>HelloDesk – Smart AI Chatbots</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #0078d4;
+      --dark: #1f1f1f;
+      --light: #f9f9f9;
+      --text: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
+      background-color: var(--light);
+      color: var(--text);
     }
 
     header {
-      background-color: #1f1f1f;
+      background-color: var(--dark);
       color: white;
       display: flex;
       align-items: center;
@@ -45,47 +56,57 @@
     }
 
     .hero {
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
       text-align: center;
-      background-color: white;
+      background: linear-gradient(to right, #f0f0f0, #ffffff);
     }
 
     .hero h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     .hero p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
       color: #555;
     }
 
     .hero a.button {
-      background-color: #0078d4;
+      background-color: var(--primary);
       color: white;
       padding: 0.75rem 1.5rem;
       text-decoration: none;
       border-radius: 5px;
       font-weight: 600;
+      font-size: 1rem;
     }
 
     .features {
-      max-width: 800px;
-      margin: 3rem auto;
+      max-width: 900px;
+      margin: 4rem auto;
       padding: 0 2rem;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
     .features ul {
       list-style: none;
       padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
     .features li {
-      background: url('data:image/svg+xml;utf8,<svg fill="green" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M6.003 10.803l-3.5-3.5 1.414-1.414L6 7.975l5.586-5.586 1.414 1.414z"/></svg>') no-repeat left center;
-      background-size: 1rem;
-      padding-left: 2rem;
-      margin-bottom: 1rem;
+      background: white;
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       font-size: 1rem;
     }
 
@@ -94,6 +115,22 @@
       padding: 2rem;
       font-size: 0.9rem;
       color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .features ul {
+        grid-template-columns: 1fr;
+      }
+
+      .title-group {
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -114,5 +151,18 @@
   </section>
 
   <section class="features">
+    <h3>Why Choose HelloDesk?</h3>
     <ul>
-      <li>
+      <li>Automates customer FAQ responses instantly</li>
+      <li>Books appointments 24/7 — even while you sleep</li>
+      <li>Works on any website or landing page</li>
+      <li>Custom-built for your business — no coding required</li>
+    </ul>
+  </section>
+
+  <footer>
+    © HelloDesk. All rights reserved.
+  </footer>
+
+</body>
+</html>
