@@ -1,140 +1,118 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>HelloDesk – Smart AI Chatbots for Service Businesses</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelloDesk – Smart AI Chatbots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Sticky logo bar */
-    #top-bar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #1f1f1f;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      color: white;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    #top-bar img {
+
+    header img {
       height: 50px;
     }
-    #top-bar .title {
-      color: white;
+
+    .title-group {
       text-align: right;
     }
-    #top-bar .title h1 {
+
+    .title-group h1 {
       margin: 0;
       font-size: 1.5rem;
     }
-    #top-bar .title p {
+
+    .title-group p {
       margin: 0;
       font-size: 0.9rem;
+      color: #ccc;
     }
 
-    /* Remove Spectral's default banner background */
-    #banner {
-      background-image: none !important;
-      background-color: #2e2e2e;
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: white;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .hero a.button {
+      background-color: #0078d4;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .features {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      background: url('data:image/svg+xml;utf8,<svg fill="green" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M6.003 10.803l-3.5-3.5 1.414-1.414L6 7.975l5.586-5.586 1.414 1.414z"/></svg>') no-repeat left center;
+      background-size: 1rem;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div id="wrapper">
 
-    <!-- Sticky Logo Bar -->
-    <div id="top-bar">
-      <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
-      <div class="title">
-        <h1>HelloDesk</h1>
-        <p>Smart AI chatbots for service businesses</p>
-      </div>
+  <header>
+    <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
+    <div class="title-group">
+      <h1>HelloDesk</h1>
+      <p>Smart AI chatbots for service businesses</p>
     </div>
+  </header>
 
-    <!-- Spectral Header (leave empty for animation) -->
-    <header id="header" class="alt"></header>
+  <section class="hero">
+    <h2>Let HelloDesk Handle Your Customer Conversations</h2>
+    <p>Turn your website into a 24/7 booking and support machine — powered by AI.</p>
+    <a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a>
+  </section>
 
-    <!-- Banner -->
-    <section id="banner">
-      <div class="inner">
-        <h2>Let HelloDesk Handle Your Customer Conversations</h2>
-        <p>Turn your website into a 24/7 booking and support machine — powered by AI.</p>
-        <ul class="actions">
-          <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Main -->
-    <div id="main">
-
-      <!-- Intro -->
-      <section id="intro" class="main">
-        <div class="spotlight">
-          <div class="content">
-            <header class="major">
-              <h2>Automate Your Business with HelloDesk</h2>
-            </header>
-            <p>Our AI-powered chatbots help service-based businesses save time, boost bookings, and deliver instant responses — 24/7. Set it up once and let HelloDesk do the rest.</p>
-            <ul class="actions">
-              <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a></li>
-            </ul>
-          </div>
-          <span class="image"><img src="images/pic01.jpg" alt="Chatbot demo" /></span>
-        </div>
-      </section>
-
-      <!-- Features -->
-      <section id="features" class="main special">
-        <header class="major">
-          <h2>Why Choose HelloDesk?</h2>
-        </header>
-        <ul class="features">
-          <li>
-            <h3>Automates Customer FAQ Responses</h3>
-            <p>No more repetitive emails or calls. Your chatbot handles common questions instantly.</p>
-          </li>
-          <li>
-            <h3>Books Appointments 24/7</h3>
-            <p>Let clients book even when you're off the clock. Works with your calendar tools.</p>
-          </li>
-          <li>
-            <h3>Works on Any Website</h3>
-            <p>Embed your chatbot on your site, landing pages, or share it directly with clients.</p>
-          </li>
-          <li>
-            <h3>Custom Built for Your Business</h3>
-            <p>Tailored to your services, tone, and workflow — no coding required.</p>
-          </li>
-        </ul>
-      </section>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <section>
-        <h2>Ready to Get Started?</h2>
-        <p>Try our live demo and see how HelloDesk can automate your customer experience.</p>
-        <ul class="actions">
-          <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button primary">Try the Demo</a></li>
-        </ul>
-      </section>
-      <p class="copyright">© HelloDesk. Built with the Spectral template by HTML5 UP.</p>
-    </footer>
-
-  </div>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+  <section class="features">
+    <ul>
+      <li>
