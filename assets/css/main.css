@@ -4014,3 +4014,10 @@ input, select, textarea {
 #header.scrolled .site-subtitle {
   font-size: 0.85rem !important;
 }
+#header .logo img {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  height: 60px !important;
+}
+
