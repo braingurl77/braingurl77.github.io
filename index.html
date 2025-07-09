@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Logo Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HelloDesk – Smart AI Chatbots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0078d4;
+      --dark: #1f1f1f;
+      --light: #f9f9f9;
+      --text: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--light);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--dark);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    .title-group {
+      text-align: right;
+    }
+
+    .title-group h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    .title-group p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .hero {
+      padding: 5rem 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #f0f0f0, #ffffff);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+
+    .hero a.button {
+      background-color: var(--primary);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .features {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .features li {
+      background: white;
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .features ul {
+        grid-template-columns: 1fr;
+      }
+
+      .title-group {
+        text-align: left;
+        margin-left: 1rem;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
 </head>
-<body style="text-align: center; padding: 4rem; font-family: sans-serif;">
-  <h1>HelloDesk Logo Test</h1>
-  <img src="images/hellodesk-logo.png" alt="HelloDesk logo" style="height: 100px;" />
-  <p>If you can see the logo above, the path is correct.</p>
+<body>
+
+  <header>
+    <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
+    <div class="title-group">
+      <h1>HelloDesk</h1>
+      <p>Smart AI chatbots for service businesses</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Let HelloDesk Handle Your Customer Conversations</h2>
+    <p>Turn your website into a 24/7 booking and support machine — powered by AI.</p>
+    <a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a>
+  </section>
+
+  <section class="features">
+    <h3>Why Choose HelloDesk?</h3>
+    <ul>
+      <li>Automates customer FAQ responses instantly</li>
+      <li>Books appointments 24/7 — even while you sleep</li>
+      <li>Works on any website or landing page</li>
+      <li>Custom-built for your business — no coding required</li>
+    </ul>
+  </section>
+
+  <footer>
+    © HelloDesk. All rights reserved.
+  </footer>
+
 </body>
 </html>
