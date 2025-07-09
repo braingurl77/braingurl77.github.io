@@ -14,10 +14,10 @@
 <!-- Header -->
 <header id="header" class="alt" style="position: sticky; top: 0; z-index: 1000; background: #1f1f1f; display: flex; align-items: center; padding: 2rem;">
   <div style="flex: 0 0 auto; margin-right: 1rem;">
-    <span class="logo" style="display: inline-block; opacity: 1; visibility: visible;">
+    <span class="logo" style="display: inline-block;">
       <img src="images/hellodesk-logo.png"
            alt="HelloDesk logo"
-           style="height: 60px; display: block; opacity: 1; visibility: visible; max-width: 100%;" />
+           style="height: 60px; display: block; opacity: 1 !important; visibility: visible !important; max-width: 100%;" />
     </span>
   </div>
   <div style="flex: 1; text-align: center;">
@@ -25,6 +25,19 @@
     <p class="site-subtitle" style="margin: 0; color: white; font-size: 1rem;">Smart AI chatbots for service businesses</p>
   </div>
 </header>
+
+<!-- Force visibility and override Spectral animation -->
+<style>
+  #header .logo,
+  #header .logo img,
+  #header h1,
+  #header p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    display: block !important;
+  }
+</style>
 
 <!-- Force visibility and override Spectral animation -->
 <style>
