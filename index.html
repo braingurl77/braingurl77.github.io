@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* Sticky header with logo */
-    #custom-header {
+    /* Sticky top banner */
+    #top-banner {
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -18,35 +18,37 @@
       justify-content: space-between;
       padding: 1rem 2rem;
     }
-    #custom-header img {
+    #top-banner img {
       height: 50px;
     }
-    #custom-header .title-group {
+    #top-banner .title {
+      color: white;
       text-align: right;
     }
-    #custom-header h1 {
+    #top-banner .title h1 {
       margin: 0;
       font-size: 1.5rem;
-      color: white;
     }
-    #custom-header p {
+    #top-banner .title p {
       margin: 0;
       font-size: 0.9rem;
-      color: white;
     }
   </style>
 </head>
 <body>
   <div id="wrapper">
 
-    <!-- Sticky Header with Logo -->
-    <div id="custom-header">
+    <!-- Sticky Banner with Logo -->
+    <div id="top-banner">
       <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
-      <div class="title-group">
+      <div class="title">
         <h1>HelloDesk</h1>
         <p>Smart AI chatbots for service businesses</p>
       </div>
     </div>
+
+    <!-- Spectral Header (leave empty for animation) -->
+    <header id="header" class="alt"></header>
 
     <!-- Spectral Banner -->
     <section id="banner">
