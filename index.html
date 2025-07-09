@@ -12,19 +12,46 @@
   <div id="wrapper">
 
 <!-- Header -->
-<header id="header" class="alt" style="position: sticky; top: 0; z-index: 1000; background: #1f1f1f; display: flex; align-items: center; padding: 2rem;">
-  <div style="flex: 0 0 auto; margin-right: 1rem;">
-    <span class="logo" style="display: inline-block;">
+<header id="header" class="alt">
+  <div class="inner" style="display: flex; align-items: center; padding: 2rem;">
+    <span class="logo" style="margin-right: 1rem;">
       <img src="images/hellodesk-logo.png"
            alt="HelloDesk logo"
-           style="height: 60px; display: block; opacity: 1 !important; visibility: visible !important; max-width: 100%;" />
+           style="height: 60px; display: block;" />
     </span>
-  </div>
-  <div style="flex: 1; text-align: center;">
-    <h1 class="site-title" style="margin: 0; color: white; font-size: 2rem;">HelloDesk</h1>
-    <p class="site-subtitle" style="margin: 0; color: white; font-size: 1rem;">Smart AI chatbots for service businesses</p>
+    <div style="flex: 1; text-align: center;">
+      <h1 class="site-title" style="margin: 0; color: white; font-size: 2rem;">HelloDesk</h1>
+      <p class="site-subtitle" style="margin: 0; color: white; font-size: 1rem;">Smart AI chatbots for service businesses</p>
+    </div>
   </div>
 </header>
+
+<!-- Force visibility -->
+<style>
+  #header .logo,
+  #header .logo img,
+  #header h1,
+  #header p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    display: block !important;
+  }
+</style>
+
+
+<!-- Force visibility -->
+<style>
+  #header .logo,
+  #header .logo img,
+  #header h1,
+  #header p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    display: block !important;
+  }
+</style>
 
 <!-- Force visibility and override Spectral animation -->
 <style>
