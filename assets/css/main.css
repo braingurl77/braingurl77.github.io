@@ -4020,4 +4020,11 @@ input, select, textarea {
   visibility: visible !important;
   height: 60px !important;
 }
+#header .logo img {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  height: 60px !important;
+  transition: all 0.3s ease;
+}
 
