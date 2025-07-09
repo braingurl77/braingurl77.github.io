@@ -3997,3 +3997,20 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+#header.scrolled {
+  background: #111;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+#header.scrolled .logo img {
+  height: 40px !important;
+}
+
+#header.scrolled .site-title {
+  font-size: 1.5rem !important;
+}
+
+#header.scrolled .site-subtitle {
+  font-size: 0.85rem !important;
+}
