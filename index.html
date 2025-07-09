@@ -12,19 +12,31 @@
   <div id="wrapper">
 
     <!-- Header -->
-    <header id="header" class="alt" style="position: sticky; top: 0; z-index: 1000; background: #1f1f1f; display: flex; align-items: center; padding: 2rem; transition: all 0.3s ease;">
-      <div style="flex: 0 0 auto; margin-right: 1rem;">
-        <a href="/" class="logo">
-          <img src="images/hellodesk-logo.png"
-               alt="HelloDesk logo"
-               style="height: 60px; display: block; transition: all 0.3s ease;" />
-        </a>
-      </div>
-      <div style="flex: 1; text-align: center;">
-        <h1 class="site-title" style="margin: 0; color: white; font-size: 2rem; transition: all 0.3s ease;">HelloDesk</h1>
-        <p class="site-subtitle" style="margin: 0; color: white; font-size: 1rem; transition: all 0.3s ease;">Smart AI chatbots for service businesses</p>
-      </div>
-    </header>
+<header id="header" class="alt" style="position: sticky; top: 0; z-index: 1000; background: #1f1f1f; display: flex; align-items: center; padding: 2rem;">
+  <div style="flex: 0 0 auto; margin-right: 1rem;">
+    <a href="/" class="logo" style="display: inline-block;">
+      <img src="images/hellodesk-logo.png"
+           alt="HelloDesk logo"
+           style="height: 60px; display: block; opacity: 1; visibility: visible;" />
+    </a>
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <h1 class="site-title" style="margin: 0; color: white; font-size: 2rem;">HelloDesk</h1>
+    <p class="site-subtitle" style="margin: 0; color: white; font-size: 1rem;">Smart AI chatbots for service businesses</p>
+  </div>
+</header>
+
+<!-- Disable Spectral's animation hiding -->
+<style>
+  #header .logo,
+  #header .logo img,
+  #header h1,
+  #header p {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+  }
+</style>
 
     <style>
   #header .logo,
