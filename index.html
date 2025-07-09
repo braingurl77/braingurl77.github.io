@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* Sticky header */
-    #top-banner {
+    /* Sticky header with logo */
+    #custom-header {
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -18,18 +18,18 @@
       justify-content: space-between;
       padding: 1rem 2rem;
     }
-    #top-banner img {
+    #custom-header img {
       height: 50px;
     }
-    #top-banner .title-group {
+    #custom-header .title-group {
       text-align: right;
     }
-    #top-banner h1 {
+    #custom-header h1 {
       margin: 0;
       font-size: 1.5rem;
       color: white;
     }
-    #top-banner p {
+    #custom-header p {
       margin: 0;
       font-size: 0.9rem;
       color: white;
@@ -39,8 +39,8 @@
 <body>
   <div id="wrapper">
 
-    <!-- Sticky Banner with Logo -->
-    <div id="top-banner">
+    <!-- Sticky Header with Logo -->
+    <div id="custom-header">
       <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
       <div class="title-group">
         <h1>HelloDesk</h1>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <!-- Banner Section -->
+    <!-- Spectral Banner -->
     <section id="banner">
       <div class="inner">
         <h2>Automate Your Business with HelloDesk</h2>
@@ -122,11 +122,4 @@
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
-</html>
+  <script
