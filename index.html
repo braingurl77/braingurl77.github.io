@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <style>
-    /* Sticky top banner */
-    #top-banner {
+    /* Sticky logo bar */
+    #logo-bar {
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -18,28 +18,34 @@
       justify-content: space-between;
       padding: 1rem 2rem;
     }
-    #top-banner img {
+    #logo-bar img {
       height: 50px;
     }
-    #top-banner .title {
+    #logo-bar .title {
       color: white;
       text-align: right;
     }
-    #top-banner .title h1 {
+    #logo-bar .title h1 {
       margin: 0;
       font-size: 1.5rem;
     }
-    #top-banner .title p {
+    #logo-bar .title p {
       margin: 0;
       font-size: 0.9rem;
+    }
+
+    /* Remove banner background */
+    #banner {
+      background-image: none !important;
+      background-color: #2e2e2e; /* Optional: solid fallback */
     }
   </style>
 </head>
 <body>
   <div id="wrapper">
 
-    <!-- Sticky Banner with Logo -->
-    <div id="top-banner">
+    <!-- Sticky Logo Bar -->
+    <div id="logo-bar">
       <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
       <div class="title">
         <h1>HelloDesk</h1>
@@ -50,7 +56,7 @@
     <!-- Spectral Header (leave empty for animation) -->
     <header id="header" class="alt"></header>
 
-    <!-- Spectral Banner -->
+    <!-- Banner -->
     <section id="banner">
       <div class="inner">
         <h2>Automate Your Business with HelloDesk</h2>
