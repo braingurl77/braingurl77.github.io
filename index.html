@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" />
   <style>
-    /* Sticky header styles */
-    #custom-header {
+    /* Sticky header */
+    #top-banner {
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -18,15 +18,18 @@
       justify-content: space-between;
       padding: 1rem 2rem;
     }
-    #custom-header img {
+    #top-banner img {
       height: 50px;
     }
-    #custom-header h1 {
+    #top-banner .title-group {
+      text-align: right;
+    }
+    #top-banner h1 {
       margin: 0;
       font-size: 1.5rem;
       color: white;
     }
-    #custom-header p {
+    #top-banner p {
       margin: 0;
       font-size: 0.9rem;
       color: white;
@@ -34,19 +37,18 @@
   </style>
 </head>
 <body>
-  <!-- Wrapper -->
   <div id="wrapper">
 
-    <!-- Custom Sticky Header -->
-    <div id="custom-header">
+    <!-- Sticky Banner with Logo -->
+    <div id="top-banner">
       <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
-      <div style="text-align: right;">
+      <div class="title-group">
         <h1>HelloDesk</h1>
         <p>Smart AI chatbots for service businesses</p>
       </div>
     </div>
 
-    <!-- Banner (optional hero section) -->
+    <!-- Banner Section -->
     <section id="banner">
       <div class="inner">
         <h2>Automate Your Business with HelloDesk</h2>
@@ -107,4 +109,24 @@
     <footer id="footer">
       <section>
         <h2>Ready to Get Started?</h2>
-        <p>Try our live demo and see how HelloDesk can automate your customer experience
+        <p>Try our live demo and see how HelloDesk can automate your customer experience.</p>
+        <ul class="actions">
+          <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button primary">Try the Demo</a></li>
+        </ul>
+      </section>
+      <p class="copyright">© HelloDesk. Built with the Spectral template by HTML5 UP.</p>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
