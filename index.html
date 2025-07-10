@@ -27,7 +27,7 @@
     }
 
     header {
-      position: sticky;
+      position: fixed;
       top: 0;
       width: 100%;
       background: rgba(31, 31, 31, 0.85);
@@ -41,10 +41,10 @@
     }
 
     header img {
-      height: 50px;
+      height: 70px;
       background: white;
-      padding: 4px;
-      border-radius: 4px;
+      padding: 6px;
+      border-radius: 6px;
     }
 
     .title-group {
@@ -52,20 +52,26 @@
     }
 
     .title-group h1 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin: 0;
     }
 
     .title-group p {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: #ccc;
     }
 
     .hero {
+      height: 100vh;
       background: linear-gradient(to right, #00bcd4, #2196f3);
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding: 6rem 2rem;
+      padding: 2rem;
+      padding-top: 8rem;
     }
 
     .hero h2 {
@@ -76,6 +82,7 @@
     .hero p {
       font-size: 1.25rem;
       margin-bottom: 2rem;
+      max-width: 600px;
     }
 
     .hero a.button {
@@ -94,14 +101,14 @@
     }
 
     .features {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 4rem auto;
       padding: 0 2rem;
     }
 
     .features h3 {
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin-bottom: 2rem;
     }
 
@@ -118,7 +125,7 @@
       border-left: 4px solid var(--primary);
       padding: 1.5rem;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     footer {
@@ -145,11 +152,15 @@
       }
 
       .hero h2 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       .hero p {
         font-size: 1rem;
+      }
+
+      header img {
+        height: 60px;
       }
     }
   </style>
@@ -186,3 +197,4 @@
 
 </body>
 </html>
+
