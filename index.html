@@ -1,126 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HelloDesk – Smart AI Chatbots</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #00bcd4;
-      --dark: #1f1f1f;
-      --light: #ffffff;
-      --text: #222;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--light);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      width: 100%;
-      background: linear-gradient(to right, rgba(31, 31, 31, 0.85), rgba(0, 0, 0, 0.85));
-      backdrop-filter: blur(10px);
-      padding: 1rem 2rem;
-      z-index: 1000;
-    }
-
-.site-header {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(10px);
-  padding: 1rem 2rem;
-  z-index: 1000;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo {
-  height: 100px;
-  width: auto;
-  object-fit: contain;
-}
-
-.brand h1 {
-  font-size: 2rem;
-  color: white;
-  margin: 0;
-}
-
-.brand p {
-  font-size: 1rem;
-  color: #ccc;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .logo {
-    height: 80px;
-  }
-
-  .brand h1 {
-    font-size: 1.5rem;
-  }
-}
-
-
-  </style>
+    <title>HelloDesk – Smart AI Chatbots for Service Businesses</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
-<body>
+<body class="is-preload">
 
-<header class="site-header">
-  <div class="header-container">
-    <img src="images/hellodesk-logo.png" alt="HelloDesk logo" class="logo" />
-    <div class="brand">
-      <h1>HelloDesk</h1>
-      <p>Smart AI chatbots for service businesses</p>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="alt">
+            <span class="logo"><img src="images/logo.svg" alt="HelloDesk Logo" /></span>
+            <h1>HelloDesk</h1>
+            <p>Smart AI chatbots for service businesses</p>
+        </header>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Intro -->
+            <section id="intro" class="main">
+                <div class="spotlight">
+                    <div class="content">
+                        <header class="major">
+                            <h2>Automate Your Business with HelloDesk</h2>
+                        </header>
+                        <p>Our AI-powered chatbots help service-based businesses save time, boost bookings, and deliver instant responses — 24/7. Set it up once and let HelloDesk do the rest.</p>
+                        <ul class="actions">
+                            <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a></li>
+                        </ul>
+                    </div>
+                    <span class="image"><img src="images/pic01.jpg" alt="Chatbot demo" /></span>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section id="features" class="main special">
+                <header class="major">
+                    <h2>Why Choose HelloDesk?</h2>
+                </header>
+                <ul class="features">
+                    <li>
+                        <h3>Automates Customer FAQ Responses</h3>
+                        <p>No more repetitive emails or calls. Your chatbot handles common questions instantly.</p>
+                    </li>
+                    <li>
+                        <h3>Books Appointments 24/7</h3>
+                        <p>Let clients book even when you're off the clock. Works with your calendar tools.</p>
+                    </li>
+                    <li>
+                        <h3>Works on Any Website</h3>
+                        <p>Embed your chatbot on your site, landing pages, or share it directly with clients.</p>
+                    </li>
+                    <li>
+                        <h3>Custom Built for Your Business</h3>
+                        <p>Tailored to your services, tone, and workflow — no coding required.</p>
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <h2>Ready to Get Started?</h2>
+                <p>Try our live demo and see how HelloDesk can automate your customer experience.</p>
+                <ul class="actions">
+                    <li><a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button primary">Try the Demo</a></li>
+                </ul>
+            </section>
+            <p class="copyright">© HelloDesk. Built with the Spectral template by HTML5 UP.</p>
+        </footer>
+
     </div>
-  </div>
-</header>
 
-  <section class="hero">
-    <h2>Let HelloDesk Handle Your Customer Conversations</h2>
-    <p>Turn your website into a 24/7 booking and support machine — powered by AI.</p>
-    <a href="https://braingurl77.github.io/wellness---clinic-chatbot-demo/" class="button">Try Our Demo</a>
-  </section>
-
-  <section class="features">
-    <h3>Why Choose HelloDesk?</h3>
-    <ul>
-      <li>Automates customer FAQ responses instantly</li>
-      <li>Books appointments 24/7 — even while you sleep</li>
-      <li>Works on any website or landing page</li>
-      <li>Custom-built for your business — no coding required</li>
-    </ul>
-  </section>
-
-  <footer>
-    © HelloDesk. All rights reserved.
-  </footer>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 </html>
