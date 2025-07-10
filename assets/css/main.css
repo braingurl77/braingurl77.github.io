@@ -4055,7 +4055,7 @@ input, select, textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: #1f1f1f;
+  background: #2e3141; /* dark blue from footer */
   color: #fff;
   padding: 1.5rem 2rem;
   text-align: center;
@@ -4075,4 +4075,3 @@ input, select, textarea {
   margin: 0.5rem 0 0;
   color: #ccc;
 }
-
