@@ -2783,9 +2783,9 @@ input, select, textarea {
 				padding: 3em 2em 1em 2em ;
 			}
 		}
-     .spotlight.ai-style-change-1 {
-    display: none;
-}
+    section#intro > .spotlight {
+      display: none;
+    }
 
 /* Wrapper */
 
