@@ -2782,8 +2782,10 @@ input, select, textarea {
 			.spotlight .content {
 				padding: 3em 2em 1em 2em ;
 			}
-
 		}
+     .spotlight.ai-style-change-1 {
+    display: none;
+}
 
 /* Wrapper */
 
