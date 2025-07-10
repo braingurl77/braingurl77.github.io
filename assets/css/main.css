@@ -4018,13 +4018,13 @@ input, select, textarea {
   display: block !important;
   opacity: 1 !important;
   visibility: visible !important;
-  height: 60px !important;
+  height: 120px !important;
 }
 #header .logo img {
   opacity: 1 !important;
   visibility: visible !important;
   display: block !important;
-  height: 60px !important;
+  height: 120px !important;
   transition: all 0.3s ease;
 }
 #sticky-banner {
@@ -4047,7 +4047,7 @@ input, select, textarea {
 }
 
 .banner-logo {
-  height: 120px;
+  height: 160px;
   width: auto;
 }
 
