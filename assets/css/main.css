@@ -4051,4 +4051,28 @@ input, select, textarea {
   margin: 0.5rem 0 0;
   color: #ccc;
 }
+#sticky-banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#sticky-banner h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+#sticky-banner p {
+  font-size: 1rem;
+  margin: 0.5rem 0 0;
+  color: #ccc;
+}
 
