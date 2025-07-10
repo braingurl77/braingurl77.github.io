@@ -36,151 +36,71 @@
       z-index: 1000;
     }
 
-    .site-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
 
-    .logo-group {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .logo-group img {
-      height: 90px;
-      width: auto;
-      object-fit: contain;
-    }
+.logo {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+}
 
-    .brand-text h1 {
-      font-size: 2rem;
-      color: white;
-      margin: 0;
-    }
+.brand h1 {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
 
-    .brand-text p {
-      font-size: 1rem;
-      color: #ccc;
-      margin: 0;
-    }
+.brand p {
+  font-size: 1rem;
+  color: #ccc;
+  margin: 0;
+}
 
-    .hero {
-      height: 100vh;
-      background: linear-gradient(to right, #00bcd4, #2196f3);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-      padding-top: 8rem;
-    }
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+  .logo {
+    height: 80px;
+  }
 
-    .hero p {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-      max-width: 600px;
-    }
+  .brand h1 {
+    font-size: 1.5rem;
+  }
+}
 
-    .hero a.button {
-      background-color: white;
-      color: #0078d4;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: 600;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
 
-    .hero a.button:hover {
-      background-color: #f0f0f0;
-    }
-
-    .features {
-      max-width: 1000px;
-      margin: 4rem auto;
-      padding: 0 2rem;
-    }
-
-    .features h3 {
-      text-align: center;
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .features ul {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      padding: 0;
-    }
-
-    .features li {
-      background: #f9f9f9;
-      border-left: 4px solid var(--primary);
-      padding: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      font-size: 1.1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #666;
-      background: #f0f0f0;
-    }
-
-    @media (max-width: 768px) {
-      .site-header .container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .logo-group {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .logo-group img {
-        height: 70px;
-      }
-
-      .hero h2 {
-        font-size: 2.2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <div class="logo-group">
-        <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
-        <div class="brand-text">
-          <h1>HelloDesk</h1>
-          <p>Smart AI chatbots for service businesses</p>
-        </div>
-      </div>
+ <header class="site-header">
+  <div class="header-inner">
+    <img src="images/hellodesk-logo.png" alt="HelloDesk logo" class="logo" />
+    <div class="brand">
+      <h1>HelloDesk</h1>
+      <p>Smart AI chatbots for service businesses</p>
     </div>
-  </header>
+  </div>
+</header>
 
   <section class="hero">
     <h2>Let HelloDesk Handle Your Customer Conversations</h2>
