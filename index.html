@@ -26,39 +26,46 @@
       line-height: 1.6;
     }
 
-    header {
-      position: fixed;
+    .site-header {
+      position: sticky;
       top: 0;
       width: 100%;
-      background: rgba(31, 31, 31, 0.85);
-      backdrop-filter: blur(8px);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      background: linear-gradient(to right, rgba(31, 31, 31, 0.85), rgba(0, 0, 0, 0.85));
+      backdrop-filter: blur(10px);
       padding: 1rem 2rem;
       z-index: 1000;
     }
 
-    header img {
-      height: 70px;
-      background: white;
-      padding: 6px;
-      border-radius: 6px;
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .title-group {
-      text-align: right;
+    .logo-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
     }
 
-    .title-group h1 {
-      font-size: 1.8rem;
+    .logo-group img {
+      height: 90px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .brand-text h1 {
+      font-size: 2rem;
+      color: white;
       margin: 0;
     }
 
-    .title-group p {
+    .brand-text p {
       font-size: 1rem;
       color: #ccc;
+      margin: 0;
     }
 
     .hero {
@@ -137,18 +144,18 @@
     }
 
     @media (max-width: 768px) {
-      .features ul {
-        grid-template-columns: 1fr;
-      }
-
-      .title-group {
-        text-align: left;
-        margin-left: 1rem;
-      }
-
-      header {
+      .site-header .container {
         flex-direction: column;
         align-items: flex-start;
+      }
+
+      .logo-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo-group img {
+        height: 70px;
       }
 
       .hero h2 {
@@ -158,32 +165,22 @@
       .hero p {
         font-size: 1rem;
       }
-
-      header img {
-        height: 60px;
-      }
     }
   </style>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container">
-    <div class="logo-group">
-      <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
-      <div class="brand-text">
-        <h1>HelloDesk</h1>
-        <p>Smart AI chatbots for service businesses</p>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo-group">
+        <img src="images/hellodesk-logo.png" alt="HelloDesk logo" />
+        <div class="brand-text">
+          <h1>HelloDesk</h1>
+          <p>Smart AI chatbots for service businesses</p>
+        </div>
       </div>
     </div>
-    <!-- Optional nav links -->
-    <!-- <nav>
-      <a href="#features">Features</a>
-      <a href="#demo">Demo</a>
-      <a href="#contact">Contact</a>
-    </nav> -->
-  </div>
-</header>
+  </header>
 
   <section class="hero">
     <h2>Let HelloDesk Handle Your Customer Conversations</h2>
