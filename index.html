@@ -10,19 +10,44 @@
 <body class="is-preload">
     
 <!-- Sticky Banner Header -->
-<header id="sticky-banner" style="position: fixed; top: 0; width: 100%; background: white; z-index: 9999; padding: 1rem 2rem;">
-  <div class="inner" style="display: flex; align-items: center; justify-content: flex-start; gap: 2rem; flex-wrap: wrap;">
-    <img src="images/hellodesk-logo.png" alt="HelloDesk logo"
-         style="height: 240px; max-width: 100%; width: auto;" />
-    <div style="text-align: left;">
-      <h1 style="margin: 0; color: #111111;">HelloDesk</h1>
-      <p style="margin: 0; color: #333333;">Smart AI chatbots for service businesses</p>
+<header id="sticky-banner" style="
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2e3141;     /* dark blue to match footer */
+    z-index: 9999;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+">
+  <div class="inner" style="
+      display: flex;
+      align-items: center;
+      justify-content: space-between;   /* push items to the edges */
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+  ">
+    <!-- Logo on the left -->
+    <img
+      src="images/hellodesk-logo.png"
+      alt="HelloDesk logo"
+      style="height: 60px; width: auto;"
+    />
+
+    <!-- Text on the right -->
+    <div style="text-align: right;">
+      <h1 style="margin: 0; color: #fff; font-size: 1.8rem; letter-spacing: .05em;">
+        HelloDesk
+      </h1>
+      <p style="margin: 0; color: #ccc; font-size: 1rem;">
+        Smart AI chatbots for service businesses
+      </p>
     </div>
   </div>
 </header>
 
-<!-- Spacer to offset fixed header -->
-<div style="height: 260px;"></div>
+<!-- Spacer to offset fixed header (match your header’s total height ~80px) -->
+<div style="height: 80px;"></div>
 
 <!-- Wrapper -->
 <div id="wrapper">
